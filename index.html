@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Rehoboth cosmetics</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/reponsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/Image/logo.png" alt="R" style="text-align: center; color: #fff;">
+      <h3>Rehoboth</h3>
+    </div>
+
+    <nav>
+      <ul id="navbar">
+        <li><a href="index.html" class="activeClass">home</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+<div>
+    <div class="formBtn">
+      <div id="account">Account</div>
+      <div id="field">
+        <input class="accountbtn" type="button" value="login" id="loginForm">
+        <input class="accountbtn" type="button" value="signup" id="signupForm">
+      </div>
+    </div>
+
+<div class="login" id="firstForm">
+
+<form action="" method="post" id="myForm">
+<h2>login</h2>
+<input type="email" placeholder="email addres" class="box" id="userEmail">
+<input type="password" placeholder="password" class="box" id="userPassword">
+<p>forget password?<a href="#">click here!</a></p>
+<p>Don't have an account!<a href="#" id="registerBtn">register now!</a></p>
+<input type="submit" class="logbtn" value="login" id="windowLocation">
+<i class="fa fa-times" id="hideForm"></i>
+</form>
+</div>
+
+</div>
+    <div class="cartBag"><i class="fas fa-shopping-cart"></i> <span id="counter"></span></div>
+    <div class="hamburger" id="outdent"><i class="fas fa-bars"></i></div>
+  </header>
+
+
+  <section class="hero hero-section">
+
+    <div class="section-content">
+      <h1>Natural Beauty Starts Here</h1>
+      <p>Discover Organic Skin Care and Beauty
+        Products that love your skin. </p>
+      <button onclick="window.location.href='shop.html'" class="btn">Shop Now</button>
+      <h3>Rehoboth Cosmetics Home</h3>
+    </div>
+  </section>
+  </section>
+
+
+<div class="login" id="fullForm">
+
+<form action="sendmail.php" method="post">
+<h2>login</h2>
+<input type="email" placeholder="email addres" class="box">
+<input type="password" placeholder="password" class="box">
+<p>forget password?<a href="#">click here!</a></p>
+<p>Don't have an account!<a href="#" id="registerBtn">register now!</a></p>
+<input type="submit" class="logbtn" value="login">
+<i class="fa fa-times" id="timeRemove"></i>
+</form>
+</div>
+
+  <!--some topics about us-->
+
+  <section class="services">
+    <h1>Short-pro</h1>
+    <div class="serviceContent">
+      <div class="content-card">
+        <h3>Free Delivery</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+      <div class="content-card">
+        <h3>Lip Oil</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+      <div class="content-card">
+        <h3>Eye Lash</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+      <div class="content-card">
+        <h3>Like human hair</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+      <div class="content-card">
+        <h3>short suit</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+      <div class="content-card">
+        <h3>Tfr-kelem</h3>
+        <img src="/Image/herbal_.webp" alt="herbal">
+      </div>
+    </div>
+  </section>
+  <!---featured products sections-->
+
+  <section class="featured-products">
+    <h1>featured Products</h1>
+    <h3>Collectin Of Our Featured Products</h3>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="/Image/rosemary.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+          <h3><span id="starCount"></span></h3>
+        </div>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="/Image/image_2.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <h3><span>4.9 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="/Image/herbal_.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <h3><span>4.7 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="/Image/herbalfacewash.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>5 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="/Image/oleaVeira.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <h3><span>3.8 out 5</span></h3>
+        <p>Price: 400</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="/Image/rosemary_1.webp" alt="" />
+        <h3>RoseMErry sub</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!---featured products sections-->
+
+<section class="customer">
+
+
+<h1>Our custmores what say...</h1>
+<div class="main-container">
+<h1 class="prev"> < </h1>
+<div class="slid-container">
+
+<div class="slid-info">
+<img src="/SlideImage/degife.jpg" alt="">
+
+<p>This is who is our best cutsomze</p>
+<h3>DEgeT</h3>
+</div>
+
+<div class="slid-info">
+<img src="/SlideImage/photo_2022-07-29_17-39-12 (2).jpg" alt="">
+<p>This is who is our best cutsomze</p>
+<h3>GeneT</h3>
+</div>
+
+<div class="slid-info">
+<img src="/SlideImage/photo_2022-07-29_17-39-12 (2).jpg" alt="">
+<p>This is who is our best cutsomze</p>
+<h3>GeneT</h3>
+</div>
+
+<div class="slid-info">
+<img src="/SlideImage/photo_2022-07-29_17-39-12 (2).jpg" alt="">
+<p>This is who is our best cutsomze</p>
+<h3>GeneT</h3>
+</div>
+
+<div class="slid-info">
+<img src="/SlideImage/photo_2022-07-29_17-39-12 (2).jpg" alt="">
+
+<p>This is who is our best cutsomze azzszszszszzszscdcdzzz</p>
+<h3>ZineT</h3>
+</div>
+
+
+<div class="slid-info">
+<img src="/SlideImage/photo_2024-09-28_23-15-08.jpg" alt="">
+
+<p>This is who is our best cutsomze</p>
+<h3>TegeT</h3>
+</div>
+</div>
+<h1 class="next"> > </h1>
+</div>
+<div class="span">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</section>
+
+
+
+
+  <!---about products-->
+
+  <section class="about-product">
+    <div class="aboutPro-container">
+      <h1>Why Our Products ?</h1>
+      <p>Rehoboth Cosmetics blends nature and science to deliver radiant beauty.<br>
+        Our products are cruelty-free, locally inspired, and crafted for all skin types.</p>
+
+      <ul>
+        <li>Natural Ingredients</li>
+        <li>Dermatologist Tested</li>
+        <li>Hydrating & Nourshing</li>
+        <li>Ethically Sourced</li>
+        <li>Generally Tested</li>
+      </ul>
+      <button id="newBtn">Learn More</button>
+    </div>
+  </section>
+
+  <!--banner sections-->
+
+  <section class="banner-section">
+    <h4>More Products</h4>
+    <h2>Up to <span>50%-off limited products</span> for summer series payment</h2>
+    <button onclick="window.location.href='shop.html'" class="btn">Visit Us</button>
+  </section>
+
+  <section class="aboutreho">
+    <h1>New Products</h1>
+    <div class="ourbrands">
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn" type="button">Addtocart</button>
+      </div>
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+
+      <div class="brandimg">
+        <img src="/Image/herbalfacewash.webp" alt="">
+        <h4>rose face</h4>
+        <p>for all types of featured-products</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h3><span>4.8 out 5</span></h3>
+        <p>Price: 450</p>
+        <button id="cartBtn">Addtocart</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="newsleter">
+    <h2>Subscribe For Our newsletter</h2>
+    <form action="">
+      <input type="email" name="emaim" id="email" placeholder="enter valid email address">
+
+      <button class="btnSubscribe" type="button">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+
+    <div class="footer">
+      <div class="row">
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html"> about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="row">
+        <h2>Services</h2>
+        <ul>
+          <li>New product everyday</li>
+          <li>Free Delivery</li>
+          <li>Privacy</li>
+          <li>Terms and conditions</li>
+        </ul>
+      </div>
+
+
+
+      <div class="row">
+        <h2>Contact us</h2>
+        <ul>
+          <li><a href="#"><i class="fas fa-phone"></i>:(+251)-9242-754</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> ethiopia, hawasa</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i>rehoboth09@gmail.com</a></li>
+        </ul>
+      </div>
+
+
+      <div class="row">
+        <h2>Social media link</h2>
+        <ul>
+          <li><i class="fab fa-linkedin"></i> linkedin</li>
+          <li><i class="fab fa-facebook"></i> facebook</li>
+          <li><i class="fab fa-tiktok"></i> tiktok</li>
+          <li><i class="fab fa-google"></i> gmail</li>
+        </ul>
+      </div>
+
+
+
+    </div>
+    <div class="copyright">
+      <p> <span id="copybtn"> &copy;</span><span id="date"></span>Rehoboth Cosmetics . All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/script/main.js"></script>
+</body>
+
+</html>

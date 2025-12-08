@@ -1,0 +1,102 @@
+✅ Step-by-Step Integration
+1. Include ScrollReveal
+
+You already did this ✅
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+Keep it above your main.js (which you did correctly).
+
+2. Add the ScrollReveal Script
+
+You can place this inside your /script/main.js or just before </body>.
+
+Here’s a clean and flexible setup for all your sections 👇
+
+<script>
+  // Common animation settings
+  const scrollRevealOptions = {
+    distance: "60px",
+    duration: 1000,
+    delay: 200,
+    easing: "ease-out",
+    reset: true
+  };
+
+  // Hero section
+  ScrollReveal().reveal(".hero-section .section-content", {
+    ...scrollRevealOptions,
+    origin: "top"
+  });
+
+  // Services section
+  ScrollReveal().reveal(".services .content-card", {
+    ...scrollRevealOptions,
+    origin: "bottom",
+    interval: 200 // animates each card one after another
+  });
+
+  // Featured products
+  ScrollReveal().reveal(".featured-products .product-card", {
+    ...scrollRevealOptions,
+    origin: "right",
+    interval: 150
+  });
+
+  // About product section
+  ScrollReveal().reveal(".about-product .aboutPro-container", {
+    ...scrollRevealOptions,
+    origin: "left"
+  });
+
+  // Banner section
+  ScrollReveal().reveal(".banner-section", {
+    ...scrollRevealOptions,
+    origin: "bottom"
+  });
+
+  // New products (aboutreho)
+  ScrollReveal().reveal(".aboutreho .brandimg", {
+    ...scrollRevealOptions,
+    origin: "bottom",
+    interval: 150
+  });
+
+  // Newsletter section
+  ScrollReveal().reveal(".newsleter", {
+    ...scrollRevealOptions,
+    origin: "top"
+  });
+
+  // Footer
+  ScrollReveal().reveal("footer .row", {
+    ...scrollRevealOptions,
+    origin: "bottom",
+    interval: 200
+  });
+</script>
+
+How It Works
+
+origin → where the animation starts from (top, bottom, left, right).
+
+interval → adds a delay between animations of multiple elements.
+
+reset: true → makes animation reappear when scrolling back.
+
+distance → how far it moves before appearing.
+
+🌟 Result
+
+With this script:
+
+The hero section fades in from the top.
+
+The service cards slide up one by one.
+
+The product cards slide from the right.
+
+The about and banner sections fade nicely.
+
+The footer rows appear in sequence.

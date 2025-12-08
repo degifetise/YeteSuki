@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Rehoboth cosmetics</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/reponsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="/Image/logo.png" alt="logo image">
+<h3>Rehoboth</h3>
+</div>
+
+<nav>
+<ul id="navbar">
+<li><a href="index.html">home</a></li>
+<li><a href="shop.html">shop</a></li>
+<li><a href="about.html">about</a></li>
+<li><a href="contact.html" class="activeClass">contact</a></li>
+</ul>
+</nav>
+
+<div class="formBtn">
+<div id="account">Account</div>
+<div id="field">
+<input  class="accountbtn" type="button" value="login" id="loginForm">
+<input class="accountbtn" type="button" value="signup" id="signupForm">
+</div>
+</div>
+
+<div class="cartBag"><i class="fas fa-shopping-cart"></i> <span id="counter"></span></div>
+<div class="hamburger" id="outdent"><i class="fas fa-bars"></i></div>
+
+</header>
+
+<section class="hero hero-section">
+<div class="section-content">
+<h1>Natural Beauty Starts Here</h1>
+<p>Discover Organic Skin Care and Beauty Products that love your skin. </p>
+
+<button onclick="window.location.href='index.html'" class="btn">Back Home</button>
+
+
+<h3>Rehoboth Cosmetics Home</h3>
+
+</div>
+</section>
+
+
+<!--some topics about us-->
+
+<section class="services">
+<h1>Short-pro</h1>
+<div class="serviceContent">
+<div class="content-card">
+<h3>Free Delivery</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div>
+<div class="content-card">
+<h3>Lip Oil</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div>
+<div class="content-card">
+<h3>Eye Lash</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div>
+<div class="content-card">
+<h3>Like human hair</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div> 
+<div class="content-card">
+<h3>short suit</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div>
+<div class="content-card">
+<h3>Tfr-kelem</h3>
+<img src="/Image/herbal_.webp" alt="herbal">
+</div>
+</div>
+</section>
+<!---featured products sections-->
+
+<div class="contact-section">
+<h1>Contact Us</h1>
+<div class="contact-form">
+<form action="#" id="contactRehoShop">
+<div class="message" id="message"></div>
+<div>
+<label for="First Name">First Name:</label>
+<input type="text" placeholder="First Name:" id="fName">
+</div>
+<div>
+<label for="First Name">Last Name:</label>
+<input type="text" placeholder="Second Name:" id="sName">
+</div>
+<div>
+<label for="Email">Email Address:</label>
+<input type="email" placeholder="Your Email Address:" id="emailAddress">
+</div>
+</div>
+<div>
+<label for="gender">Gender:</label>
+
+<select name="gender" id="status">
+<option value="Status">Select gender status</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Trans">Trans</option>
+<option value="Gay">Gay</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<label for="Text">Text Area</label>
+<textarea name="textArea" id="msgForReho" placeholder="short text here" rows="10"></textarea>
+<button type="submit" id="formBtn">SubmitForm</button>
+</form>
+
+</div>
+</div>
+
+<!--new form section-->
+ <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+        <label>Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Subject</label>
+        <input type="text" name="title" required>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+
+
+
+
+
+
+<section class="newsleter">
+<h2>Subscribe For Our newsletter</h2>
+<form action="">
+<input type="email" name="emaim" id="email" placeholder="enter valid email address">
+
+<button class="btnSubscribe">Subscribe</button>
+</form>
+</section>
+
+<footer>
+
+<div class="footer">
+<div class="row">
+<h2>Quick links</h2>
+<ul>
+<li><a href="index.html">home</a></li>
+<li><a href="shop.html">shop</a></li>
+<li><a href="about.html">about</a></li>
+<li><a href="contact.html">contact</a></li>
+</ul>
+</div>
+
+
+<div class="row">
+<h2>Services</h2>
+<ul>
+<li>New product everyday</li>
+<li>Free Delivery</li>
+<li>Privacy</li>
+<li>Terms and conditions</li>
+</ul>
+</div>
+
+
+
+<div class="row">
+<h2>Contact us</h2>
+<ul>
+<li><a href="#"><i class="fas fa-phone"></i>:(+251)-9242-754</a></li>
+<li><a href="#"><i class="fas fa-map-marker-alt"></i> ethiopia, hawasa, <br>Atote,<br>Near Unique College</a></li>
+<li><a href="#"><i class="fas fa-envelope"></i>degifetise09@gmail.com</a></li>
+</ul>
+</div>
+
+
+<div class="row">
+<h2>Social media link</h2>
+<ul>
+<li><i class="fab fa-linkedin"></i> linkedin</li>
+<li><i class="fab fa-facebook"></i> facebook</li>
+<li><i class="fab fa-tiktok"></i> tiktok</li>
+<li><i class="fab fa-google"></i> gmail</li>
+</ul>
+</div>
+
+
+
+</div>
+<div class="copyright">
+<div class="breakLine">
+<hr>
+
+</div>
+</div>
+</footer>
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+<script src="/script/main.js"></script>
+</body>
+</html>

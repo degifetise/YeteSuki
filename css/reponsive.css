@@ -1,0 +1,165 @@
+@media (max-width: 1200px) {
+header{
+justify-content: space-around;
+padding: 10px 0;
+font-size: 22px;
+}
+}
+
+/* min-width of mobile*/
+
+@media (max-width: 768px){
+html{
+overflow-x: hidden;
+
+}
+h1,h2,h3,h4{
+font-size: 17px;
+}
+/* navbar styles */
+#navbar{
+position: absolute;
+right: -4000px;
+width: 300px;
+top: 100px;
+transition: right .3s ease;
+}
+
+#navbar.navbarDisplay{
+background-color: #134;
+right: 0;
+height: 250px;
+display: block;
+width: 100%;
+top: 70px;
+text-align: center;
+z-index: 999;
+}
+.hamburger{
+color: var(--txt-color);
+font-size: 35px;
+cursor: pointer;
+position: absolute;
+top: 20%;
+right: 18px;
+display: block;
+}
+.image-section p{
+width: 100%;
+line-height: 1.4;
+}
+/* cart bag styles*/
+header .cartBag{
+margin-right: 60px;
+}
+.product-grid{
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+}
+/* news letter sections*/
+/*image slding*/
+.customer{
+width: 100%;
+padding: 40px 20px;
+}
+.customer h1{
+font-size: 18px;
+}
+
+.slid-container{
+max-width: 1200px;
+gap: 5px;
+}
+.slid-info{
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+animation: slide-move 15s ease infinite;
+}
+
+@keyframes slide-move{
+0%{
+transform: translateX(-100%);
+}
+50%{
+transform: translateX(100%);
+}
+100%{
+transform: translateX(-100%);
+}
+}
+
+.slid-info img{
+width: 100px;
+height: 100px;
+} 
+/*image slding ends*/
+.newsleter form{
+flex: 1;
+gap: 15px;
+flex-direction: column;
+}
+.newsleter form input{
+border-radius: 22px;
+flex-wrap: wrap;
+max-width: 350px;
+width: 100%;
+}
+.newsleter form .btnSubscribe{
+border-radius: 22px;
+width: 70%;
+}
+/* news letter section ends*/
+.footer{
+flex-direction: column;
+gap: 15px;
+text-align: center;
+}
+
+/*product html parts*/
+.one-products{
+padding: 20px 20px;
+flex-direction: column;
+}
+.about-header p{
+width: 100%;
+line-height: 1.4;
+}
+.why-section p{
+line-height: 1.4;
+width: 100%;
+}
+
+footer{
+display: grid;
+grid-row: span 2;
+}
+}
+
+
+
+@media (max-width: 375px){
+
+/* navbar styles */
+
+    html{
+    font-size: 22px;
+    overflow-x: hidden;
+overflow: hidden;
+      }
+#navbar{
+font-size: 18px;
+
+}
+
+.hamburger{
+font-size: 25px;
+}
+.product-grid{
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer{
+display: grid;
+grid-template-columns: 1fr;
+}
+
+}
