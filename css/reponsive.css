@@ -4,6 +4,9 @@ justify-content: space-around;
 padding: 10px 0;
 font-size: 22px;
 }
+.contact-container{
+grid-template-columns: 1fr;
+}
 }
 
 /* min-width of mobile*/

@@ -926,101 +926,120 @@ footer .copyright #copybtn {
 }
 
 /*contact section styles*/
-
-.contact-section {
-  text-align: center;
-  padding: 20px 20px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #134;
+.form-section{
+width: 100%;
+text-align: center;
+padding: 50px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-.contact-section h1 {
-  font-size: 35px;
-  margin-bottom: 15px;
-  color: #fff;
-}
-.contact-form {
-  display: flex;
-  max-width: 680px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.contact-form form {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 680px;
-  background: linear-gradient(45deg, #ecf, #153);
-  padding: 10px;
-  gap: 5px;
-  overflow: none;
-  border-radius: 30px;
-  height: auto;
-}
-.contact-form form label {
-  color: var(--txt-color);
-  font-size: 20px;
-}
-.contact-form form input::placeholder {
-  opacity: 0.59;
-  color: #ff8c42;
-}
-.contact-form form input {
-  padding: 18px;
-  width: 100%;
-  border: none;
-  outline-offset: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #100;
-  border-radius: 20px;
-  text-transform: capitalize;
-}
-.contact-form form input:focus {
-  border-bottom: 2px solid #ff8c42;
-  cursor: pointer;
-}
-.contact-form form select {
-  padding: 15px;
-  width: 80%;
-  text-align: center;
-  appearance: none;
-  font-size: 16px;
-  color: #153;
-}
-.contact-form form select:focus {
-  border: 2px solid #ff8c67;
-}
-.contact-form form textarea {
-  width: 90%;
-  float: left;
-  padding: 20px;
-  resize: none;
-  font-size: 16px;
-  color: #100;
-  font-size: 16px;
-  text-transform: capitalize;
-}
-.contact-form form #formBtn {
-  width: 100%;
-  font-size: 17px;
-  color: var(--txt-color);
-  padding: 18px;
-  border-radius: 30px;
-  background: linear-gradient(to right, #ff8c42, #166);
-}
-.contact-form form #formBtn:hover {
-  cursor: pointer;
-  background: linear-gradient(to right, #166, #ff8c42);
+.contact-container{
+max-width: 1200px;
+display: grid;
+grid-template-columns: 1fr 2fr;
 }
 
+.left{
+max-width: 580px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+.left div{
+padding: 15px 6px;
+}
+.left div i{
+margin-right: 12px;
+color: var(--btn-hover);
+font-size: 18px;
+cursor: pointer;
+}
+.left div span{
+color: var(--bg-color);
+font-size: 18px;
+font-weight: 700;
+transition: .4s;
+}
+.left div span:hover{
+color: var(--bright-color);
+cursor: pointer;
+}
+#map{
+height: 300px;
+border: 2px solid blue;
+width: 480px;
+
+}
+.right{
+width: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: auto;
+flex-direction: column;
+}
+.right h3{
+font-weight: 800;
+font-size: 25px;
+color: var(--bg-color);
+margin-bottom: 12px;
+}
+.right .link-form {
+padding: 10px;
+width: 100%;
+max-width: 600px;
+}
+#form{
+width: 100%;
+display: flex;
+margin-bottom: 10px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 15px;
+background: none;
+border: 1px solid var(--btmfont-color);
+}
+#form div{
+margin-bottom: 12px;
+display: flex;
+flex-direction: column;
+width: 90%;
+}
+#form div label{
+margin-bottom: 8px;
+color: var(--btn-hover);
+font-size: 18px;
+font-weight: 600;
+text-align: center;
+
+}
+#form div input{
+width: 100%;
+height: 47px;
+padding: 15px;
+outline: none;
+outline-offset: none;
+border: 1px solid var(--bg-color);
+border-radius: 12px;
+}
+#form div input:focus{
+border: 2px solid blue;
+}
+#form div input[type="button"] {
+background: var(--button-color);
+font-size: 16px;
+color: var(--bright-color);
+transition: .4s;
+}
+#form div input[type="button"]:hover{
+background: var(--btn-hover);
+cursor: pointer;
+}
 /*about section styles*/
 .about-header {
   text-align: center;

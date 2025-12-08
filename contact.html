@@ -8,8 +8,13 @@
 <link rel="stylesheet" href="/css/reponsive.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+  
 <script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -92,74 +97,63 @@
 </section>
 <!---featured products sections-->
 
-<div class="contact-section">
-<h1>Contact Us</h1>
-<div class="contact-form">
-<form action="#" id="contactRehoShop">
-<div class="message" id="message"></div>
-<div>
-<label for="First Name">First Name:</label>
-<input type="text" placeholder="First Name:" id="fName">
-</div>
-<div>
-<label for="First Name">Last Name:</label>
-<input type="text" placeholder="Second Name:" id="sName">
-</div>
-<div>
-<label for="Email">Email Address:</label>
-<input type="email" placeholder="Your Email Address:" id="emailAddress">
-</div>
-</div>
-<div>
-<label for="gender">Gender:</label>
+<section class="form-section">
+<div class="contact-container">
+<div class="left">
+<h3>Contact us here!</h3>
+<div class="shop-link">
 
-<select name="gender" id="status">
-<option value="Status">Select gender status</option>
-<option value="Male">Male</option>
-<option value="Female">Female</option>
-<option value="Trans">Trans</option>
-<option value="Gay">Gay</option>
-<option value="other">Other</option>
-</select>
+<div>
+<i class="fas fa-envelope"></i>
+<span>degifetise09@gmail.com</span>
 </div>
 
-<label for="Text">Text Area</label>
-<textarea name="textArea" id="msgForReho" placeholder="short text here" rows="10"></textarea>
-<button type="submit" id="formBtn">SubmitForm</button>
+<div>
+<i class="fas fa-phone"></i>
+<span>+251:92427-5434 </span>
+</div>
+
+<div id="map">
+</div>
+  
+</div>
+</div>
+
+
+<div class="right">
+<h3>Drop message here!</h3>
+<div class="link-form">
+<form id="form">
+<div class="input-group">
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name...">
+</div>
+
+
+<div class="input-group">
+<label for="name">Phone number:</label>
+<input type="number" id="name" placeholder="Enter your phone numbers..">
+</div>
+
+<div class="input-group">
+<label for="name">Email address.</label>
+<input type="email" id="name" placeholder="Enter your email address...">
+</div>
+<div class="input-group">
+<input type="button" value="Submit">
+</div>
 </form>
 
+
 </div>
+
+
 </div>
 
-<!--new form section-->
- <form id="contact-form">
-        <!-- To simplify the tutorial, the value is static. -->
-        <input type="hidden" name="time" value="Mar 10 2025 08:46">
-        <label>Name</label>
-        <input type="text" name="name" required>
-        <label>Email</label>
-        <input type="email" name="email" required>
-        <label>Subject</label>
-        <input type="text" name="title" required>
-        <label>Message</label>
-        <textarea name="message" required></textarea>
-        <input type="submit" value="Send">
-    </form>
+</div>
 
-
-
-
-
-
-
-<section class="newsleter">
-<h2>Subscribe For Our newsletter</h2>
-<form action="">
-<input type="email" name="emaim" id="email" placeholder="enter valid email address">
-
-<button class="btnSubscribe">Subscribe</button>
-</form>
 </section>
+
 
 <footer>
 
@@ -220,10 +214,10 @@
 
 
 
-<script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-
-
+<script src="/script/map.js"></script>
 <script src="/script/main.js"></script>
 </body>
 </html>
