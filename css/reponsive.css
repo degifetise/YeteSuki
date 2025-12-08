@@ -133,7 +133,11 @@ width: 100%;
 
 footer{
 display: grid;
-grid-row: span 2;
+grid-template-columns: 1fr;
+}
+.footer-mereja{
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 }
 
@@ -162,7 +166,10 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 .footer{
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr;
 }
-
+.footer-mereja{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
 }
