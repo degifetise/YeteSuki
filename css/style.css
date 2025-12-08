@@ -935,9 +935,11 @@ align-items: center;
 justify-content: center;
 }
 .contact-container{
-max-width: 1200px;
+max-width: 1500px;
+width: 100%;
 display: grid;
 grid-template-columns: 1fr 2fr;
+
 }
 
 .left{
