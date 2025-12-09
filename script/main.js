@@ -21,7 +21,7 @@ const counterContainer = document.getElementById("counter");
 if (!counterContainer) {
   console.log("no this element here");
 } else {
-  adeBtn.forEach(button => {
+  adeBtn.forEach(button => { 
     button.addEventListener("click", () => {
       setTimeout(() => {
         let count = parseInt(counterContainer.innerText, 10) || 0;
@@ -34,10 +34,6 @@ if (!counterContainer) {
         setTimeout(() => {
           button.innerText = "Checked Up";
         }, 3000);
-        /*setTimeout(() => {
-/*button.innerHTML = '<i class="fas fa-circle-notch fa-spin spinner"></i>';
-/*
-/*}, 500);*/
 
         button.innerHTML =
           '<i class="fas fa-circle-notch fa-spin spinner"></i>';
@@ -52,6 +48,19 @@ const inputBlock = document.getElementById("field");
 acc.addEventListener("click", () => {
   inputBlock.classList.toggle("showButtons");
 });
+
+//hide form//
+const hidedForm = document.getElementById("hideForm");
+const formToHide = document.getElementById("firstForm");
+
+if(hidedForm) {
+  hidedForm.addEventListener("click", () => {
+    formToHide.classList.add("hide-form");
+  });
+}
+
+
+
 
 //to make see image details//
 const smallImage = document.querySelectorAll(".small");

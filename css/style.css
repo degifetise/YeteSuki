@@ -4,14 +4,14 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  top: -120%;
+  top: 0%;
   left: 0;
   z-index: 1000;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
 }
-.login.slide-out {
-  top: -120%;
+#firstForm .hide-form{
+top: -120%;
 }
 
 .login form {
@@ -293,14 +293,14 @@ header .cartBag span {
 /* header section styles ends*/
 
 .hero {
-  background-image: linear-gradient(-45deg,#fbc2eb, #a6c1ee, #84fab0, #f6d365),
+  background-image: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #84fab0, #f6d365),
     url(/Image/shop-home.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 4000% 4000%, cover;
   background-blend-mode: overlay;
   animation: gradientBg 15s ease-in-out infinite;
-transition: 12s;
+  transition: 12s;
   font-size: 25px;
   font-weight: 800;
   width: 100%;
@@ -313,36 +313,41 @@ transition: 12s;
 @keyframes gradientBg {
   0% {
     background-position: 10% 50%;
-    background-image: linear-gradient(-45deg, 
-      rgba(247, 215, 148, 0.4),  /* soft peach */
-      rgba(29, 209, 161, 0.4),   /* mint green */
-      rgba(84, 160, 255, 0.4)    /* sky blue */
-    ),
+    background-image: linear-gradient(
+        -45deg,
+        rgba(247, 215, 148, 0.4),
+        /* soft peach */ rgba(29, 209, 161, 0.4),
+        /* mint green */ rgba(84, 160, 255, 0.4) /* sky blue */
+      ),
       url(/Image/shop-home.webp);
   }
-25%{
-background-image: linear-gradient(-45deg, 
-      rgba(247, 215, 148, 0.4),  /* soft peach */
-      rgba(29, 209, 161, 0.4),   /* mint green */
-      rgba(84, 160, 255, 0.4)    /* sky blue */
-    ), url(/Image/image_3.webp);
-}
+  25% {
+    background-image: linear-gradient(
+        -45deg,
+        rgba(247, 215, 148, 0.4),
+        /* soft peach */ rgba(29, 209, 161, 0.4),
+        /* mint green */ rgba(84, 160, 255, 0.4) /* sky blue */
+      ),
+      url(/Image/image_3.webp);
+  }
   50% {
     background-position: 100% 50%;
-    background-image: linear-gradient(-45deg, 
-      rgba(247, 215, 148, 0.4),  /* soft peach */
-      rgba(29, 209, 161, 0.4),   /* mint green */
-      rgba(84, 160, 255, 0.4)    /* sky blue */
-    ),
+    background-image: linear-gradient(
+        -45deg,
+        rgba(247, 215, 148, 0.4),
+        /* soft peach */ rgba(29, 209, 161, 0.4),
+        /* mint green */ rgba(84, 160, 255, 0.4) /* sky blue */
+      ),
       url(/Image/aboutProimage.jpg);
   }
   100% {
     background-position: 10% 50%;
-    background-image: linear-gradient(-45deg, 
-      rgba(247, 215, 148, 0.4),  /* soft peach */
-      rgba(29, 209, 161, 0.4),   /* mint green */
-      rgba(84, 160, 255, 0.4)    /* sky blue */
-    ),
+    background-image: linear-gradient(
+      -45deg,
+      rgba(247, 215, 148, 0.4),
+      /* soft peach */ rgba(29, 209, 161, 0.4),
+      /* mint green */ rgba(84, 160, 255, 0.4) /* sky blue */
+    );
   }
 }
 .hero .section-content {
