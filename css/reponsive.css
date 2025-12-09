@@ -4,9 +4,9 @@ justify-content: space-around;
 padding: 10px 0;
 font-size: 22px;
 }
-.contact-container{
+/* .contact-container{
 grid-template-columns: 1fr;
-}
+} */
 }
 
 /* min-width of mobile*/
@@ -138,6 +138,22 @@ grid-template-columns: 1fr;
 .footer-mereja{
 display: grid;
 grid-template-columns: 1fr 1fr;
+}
+
+/*contact section*/
+.contact-container{
+max-width: 800px;
+width: 100%;
+grid-template-columns: 1fr;
+}
+.left{
+max-width: 600px;
+width: 100%;
+}
+#map{
+height: 200px;
+border: 2px solid blue;
+width: 100%;
 }
 }
 
