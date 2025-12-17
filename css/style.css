@@ -1511,3 +1511,69 @@ line-height: 2.4;
 font-size: 25px;
 color: red;
 }
+
+
+/*about-me section background rotating image
+in shop.html page*/
+.animating-_img {
+background-size: cover;
+transform-style: preserve-3d;
+width: 100%;
+z-index: 999;
+padding: 300px 20px;
+max-width: 1200px;
+margin: auto;
+}
+.animating-_img .section-content {
+text-align: center;
+margin-top: 80px;
+}
+.animating-_img .section-content h2 {
+z-index: 1000;
+color: var(--btmfont-color);
+font-size: 45px;
+
+}
+.animating-_img .section-content button{
+border-radius: 30px;
+width: 12rem;
+}
+.rotate_box {
+max-width: 1800px;
+margin: auto;
+position: relative;
+width: 200px;
+height: 300px;
+transform-style: preserve-3d;
+animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+
+0% {
+transform: perspective(1000px) rotateY(0deg);
+}
+100% {
+transform: perspective(1000px) rotateY(360deg);
+}
+} 
+.rotate_box span {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+transform-origin: center;
+transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+-webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+
+}
+.rotate_box span img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 54px;
+}
