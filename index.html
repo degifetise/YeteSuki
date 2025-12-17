@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-<!--swipper js link-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!--swipper js link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 </head>
 
@@ -54,20 +54,20 @@
 
     </div>
 
-<div class="login" id="firstForm">
+    <div class="login" id="firstForm">
 
-<form action="" method="post" id="myForm">
-<h2>login</h2>
-<input type="email" placeholder="email addres" class="box" id="userEmail">
-<input type="password" placeholder="password" class="box" id="userPassword">
-<p>forget password?<a href="#">click here!</a></p>
-<p>Don't have an account!<a href="#" id="register-Btn">register now!</a></p>
-<input type="submit" class="logbtn" value="login" id="windowLocation">
-<i class="fa fa-times" id="hideForm"></i>
-</form>
-</div>
+      <form action="" method="post" id="myForm">
+        <h2>login</h2>
+        <input type="email" placeholder="email addres" class="box" id="userEmail">
+        <input type="password" placeholder="password" class="box" id="userPassword">
+        <p>forget password?<a href="#">click here!</a></p>
+        <p>Don't have an account!<a href="#" id="register-Btn">register now!</a></p>
+        <input type="submit" class="logbtn" value="login" id="windowLocation">
+        <i class="fa fa-times" id="hideForm"></i>
+      </form>
+    </div>
 
-</div>
+    </div>
     <div class="cartBag"><i class="fas fa-shopping-cart"></i> <span id="counter"></span></div>
     <div class="hamburger" id="outdent"><i class="fas fa-bars"></i></div>
   </header>
@@ -298,44 +298,50 @@
     <h2 class="section-title">Testimonials</h2>
     <div class="section-content">
 
-      <div class="slider-container">
+      <div class="slider-container swiper">
         <div class="slider-wrapper">
-          <ul class="testimonials-list">
+          <ul class="testimonials-list swiper-wrapper">
 
-            <li class="testimonial">
-              <img src="/SlideImage/half face.jpg" alt="" class="user-image">
+            <li class="testimonial swiper-slide">
+              <img src="/SlideImage/degife.jpg" alt="" class="user-image">
               <h3 class="name">Degife Tise</h3>
               <i class="feedback">Lorem ipsum dolor sit.</i>
             </li>
 
-            <li class="testimonial">
+            <li class="testimonial swiper-slide">
               <img src="/SlideImage/degife.jpg" alt="" class="user-image">
               <h3 class="name">Degife Tise</h3>
               <i class="feedback">Lorem ipsum dolor sit.</i>
             </li>
 
 
-            <li class="testimonial">
+            <li class="testimonial swiper-slide">
               <img src="/SlideImage/photo_2022-04-28_17-58-17.jpg" alt="" class="user-image">
               <h3 class="name">Degife Tise</h3>
               <i class="feedback">Lorem ipsum dolor sit.</i>
             </li>
 
 
-            <li class="testimonial">
+            <li class="testimonial swiper-slide">
               <img src="/SlideImage/photo_2024-09-28_23-15-08.jpg" alt="" class="user-image">
               <h3 class="name">Degife Tise</h3>
               <i class="feedback">Lorem ipsum dolor sit.</i>
             </li>
 
-            <li class="testimonial">
+            <li class="testimonial swiper-slide">
               <img src="/SlideImage/photo_2022-07-29_17-39-12 (2).jpg" alt="" class="user-image">
               <h3 class="name">Degife Tise</h3>
               <i class="feedback">Lorem ipsum dolor sit.</i>
             </li>
-
-
           </ul>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
         </div>
       </div>
     </div>
@@ -526,65 +532,66 @@
   <footer>
 
     <div class="footer">
-<div class="footer-mereja">
-      <div class="row">
-        <h2>Quick links</h2>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="shop.html">shop</a></li>
-          <li><a href="about.html"> about</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
+      <div class="footer-mereja">
+        <div class="row">
+          <h2>Quick links</h2>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="about.html"> about</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="row">
+          <h2>Services</h2>
+          <ul>
+            <li>New product everyday</li>
+            <li>Free Delivery</li>
+            <li>Privacy</li>
+            <li>Terms and conditions</li>
+          </ul>
+        </div>
+
+
+
+        <div class="row">
+          <h2>Contact us</h2>
+          <ul>
+            <li><a href="#"><i class="fas fa-phone"></i>:(+251)-9242-754</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> ethiopia, hawasa</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>rehoboth09@gmail.com</a></li>
+          </ul>
+        </div>
+
+
+        <div class="row">
+          <h2>Social media link</h2>
+          <ul>
+            <li><i class="fab fa-linkedin"></i> linkedin</li>
+            <li><i class="fab fa-facebook"></i> facebook</li>
+            <li><i class="fab fa-tiktok"></i> tiktok</li>
+            <li><i class="fab fa-google"></i> gmail</li>
+          </ul>
+        </div>
+
+
+
       </div>
 
-
-      <div class="row">
-        <h2>Services</h2>
-        <ul>
-          <li>New product everyday</li>
-          <li>Free Delivery</li>
-          <li>Privacy</li>
-          <li>Terms and conditions</li>
-        </ul>
+      <div class="copyright">
+        <p> <span id="copybtn"> &copy;</span><span id="date"></span>Rehoboth Cosmetics . All rights reserved.</p>
       </div>
-
-
-
-      <div class="row">
-        <h2>Contact us</h2>
-        <ul>
-          <li><a href="#"><i class="fas fa-phone"></i>:(+251)-9242-754</a></li>
-          <li><a href="#"><i class="fas fa-map-marker-alt"></i> ethiopia, hawasa</a></li>
-          <li><a href="#"><i class="fas fa-envelope"></i>rehoboth09@gmail.com</a></li>
-        </ul>
-      </div>
-
-
-      <div class="row">
-        <h2>Social media link</h2>
-        <ul>
-          <li><i class="fab fa-linkedin"></i> linkedin</li>
-          <li><i class="fab fa-facebook"></i> facebook</li>
-          <li><i class="fab fa-tiktok"></i> tiktok</li>
-          <li><i class="fab fa-google"></i> gmail</li>
-        </ul>
-      </div>
-
-
-
-    </div>
-
-    <div class="copyright">
-      <p> <span id="copybtn"> &copy;</span><span id="date"></span>Rehoboth Cosmetics . All rights reserved.</p>
-    </div>
 
   </footer>
 
 
 
+  <!--swiper js-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
   <script src="https://unpkg.com/scrollreveal"></script>
-<!--swiper js-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="/script/main.js"></script>
 
 

@@ -21,7 +21,7 @@ const counterContainer = document.getElementById("counter");
 if (!counterContainer) {
   console.log("no this element here");
 } else {
-  adeBtn.forEach(button => { 
+  adeBtn.forEach(button => {
     button.addEventListener("click", () => {
       setTimeout(() => {
         let count = parseInt(counterContainer.innerText, 10) || 0;
@@ -53,7 +53,7 @@ acc.addEventListener("click", () => {
 const hidedForm = document.getElementById("hideForm");
 const formToHide = document.getElementById("firstForm");
 
-if(hidedForm) {
+if (hidedForm) {
   hidedForm.addEventListener("click", () => {
     formToHide.classList.add("hide-form");
   });
@@ -112,15 +112,15 @@ window.addEventListener("scroll", () => {
 
 const searchName = document.getElementById("searchName");
 const searchCard = document.querySelectorAll(".product-card");
-searchName.addEventListener('keyup', function(){
+searchName.addEventListener('keyup', function () {
   const filter = searchName.value.toLowerCase();
   searchCard.forEach((card) => {
     const title = card.querySelector('h3').textContent.toLowerCase();
-if(title.includes(filter)) {
-  card.style.display = '';
-}else {
-  card.style.display = 'none';
-}
+    if (title.includes(filter)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
   });
 
 });
@@ -163,20 +163,20 @@ else{
 
 //slide part//
 
- const previous = document.querySelector(".prev");
+const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const slideInfo = document.querySelector(".slid-info");
 
 slideInfo.forEach((cardSlide) => {
   if (next) {
     next.addEventListener("click", () => {
-     /*  cardSlide.style.transform = "translateX(-100%)"; */
+      /*  cardSlide.style.transform = "translateX(-100%)"; */
       cardSlide.classList.add("nextSlide");
     });
   }
   if (previous) {
     previous.addEventListener("click", () => {
-     /*  cardSlide.style.transform = "translateX(0%)"; */
+      /*  cardSlide.style.transform = "translateX(0%)"; */
       cardSlide.classList.add("prevSlide");
     });
 
@@ -185,3 +185,33 @@ slideInfo.forEach((cardSlide) => {
 });
 
 
+//section for testimonials//
+
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+direction: 'row',
+  spaceBetween: 25,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  },
+});
