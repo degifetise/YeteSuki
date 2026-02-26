@@ -1383,41 +1383,36 @@ footer .copyright #copybtn {
   font-weight: 900;
 }
 
-.main-container {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+ @keyframes slide-move{
+0%{
+transform: translateX(-100%);
 }
-
-.main-container h1 {
-  text-align: center;
-  margin: 5px 0;
-  background: var(--btmfont-color);
-  padding: 5px 8px;
-  cursor: pointer;
-  display: block;
+50%{
+transform: translateX(100%);
 }
-
-.slid-container {
-  max-width: 1500px;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 55px;
-  text-align: center;
+100%{
+transform: translateX(-100%);
 }
-
-.slid-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  padding: 16px;
-  background: var(--bright-color);
-  box-shadow: var(--btn-hover);
-  border-radius: 12px;
-  color: var(--bright-color);
-  animation: slide-move 11s ease infinite;
+} 
+.slid-container:hover .slid-info{
+cursor: pointer;
+animation-play-state: paused;
+}
+.slid-info img{
+text-align: center;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 10px;
+margin: auto;
+}
+.slid-info p{
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+ color: var(--bg-color);
+margin-top: 10px;
+text-wrap: wrap;
 }
 
 .slid-info.nextSlide {
@@ -1428,41 +1423,38 @@ footer .copyright #copybtn {
   transform: translateX(-400px);
 }
 
-@keyframes slide-move {
-  0% {
-    transform: translateX(-100%);
-  }
+/*testimonials section styles*/
 
-  50% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+.testimonials-section {
+padding: 50px 0 100px;
+background: var(--bg-color);
 }
-
-.slid-container:hover .slid-info {
-  cursor: pointer;
-  animation-play-state: paused;
+.testimonials-section .testimonial {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding: 35px;
 }
-
-.slid-info img {
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  margin: auto;
+.testimonials-section .testimonial .user-image {
+height: 180px;
+width: 180px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 50px;
 }
-
-.slid-info p {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--bg-color);
-  margin-top: 10px;
-  text-wrap: wrap;
+.testimonials-section .testimonial .name {
+margin-bottom: 16px;
+font-size: 35px;
+}
+.testimonials-section .testimonial .feedback{
+font-size: 28px;
+line-height: 1.5;
+}
+.testimonials-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
 }
 
 
